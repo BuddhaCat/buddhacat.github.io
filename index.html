@@ -1,11 +1,92 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Test</title>
-  </head>
-  
-  <body>
-    <p>
-      It works!
-    </p>
-  </body>
+	<head>
+		<title>Jan Schulenberg</title>
+		<meta charset="utf-8" />
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			html, body
+			{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			body
+			{
+				background-color: #eee; /*#f9f9f9;*/
+				margin: 0;
+			}
+			*
+			{
+				font-family: Helvetica, Arial, sans-serif;
+				font-weight: normal;
+				font-size: 1em;
+				line-height: 1.5em;
+				color: #aaa;
+				margin: 0;
+			}
+			h1
+			{
+				font-size: 4em;
+				line-height: 1em;
+			}
+			h2
+			{
+				font-size: 2.5em;
+				line-height: 2em;
+			}
+			.top
+			{
+				position: absolute;
+				left: 2em;
+				top: 2em;
+				z-index: 2;
+			}
+			.bottom
+			{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 5.5em;
+				border-top: 2px solid #aaa;
+				/*background-color: #eee; /*#f9f9f9;*/
+				z-index: 1;
+			}
+			.bottom p
+			{
+				position: absolute;
+				bottom: 2em;
+				right: 2em;
+			}
+			div.boldomatic-container {
+				position: absolute;
+				top: 2em;
+				right: 2em;
+				bottom: 7.5em;
+				overflow-y: auto;
+				z-index: 0;
+			}
+			iframe * body {
+				background-color: red !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top">
+			<h1>Jan Schulenberg</h1>
+			<h2>jan&#64;schulenberg.eu</h2>
+			<p>
+				=> <a href="https://de.linkedin.com/in/jschulenberg" target="_blank">Jan Schulenberg @ LinkedIn</a><br/>
+				=> <a href="https://www.xing.com/profile/Jan_Schulenberg" target="_blank">Jan Schulenberg @ Xing</a><br/>
+				=> <a href="https://github.com/BuddhaCat" target="_blank">Jan Schulenberg @ Github</a>
+			</p>
+		</div>
+
+		<div class="bottom">
+			<p>
+				schulenberg.eu | private domain of Jan Schulenberg, München | jan&#64;schulenberg.eu
+			</p>
+		</div>
+	</body>
 </html>
