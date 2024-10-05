@@ -1,0 +1,689 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*
+  Global variables
+*/
+/*
+  Color definitions
+*/
+/*
+  Common styles
+*/
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Libre Franklin";
+  background-color: #000000;
+  -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 100%;
+  line-height: 110%;
+}
+
+.language-dependent, .os-dependent {
+  display: none;
+}
+
+h1 {
+  font-size: 110%;
+}
+
+h2 {
+  font-size: 90%;
+}
+
+h3 {
+  font-size: 85%;
+}
+
+h3.small {
+  font-size: 60%;
+  line-height: 140%;
+}
+
+h4 {
+  font-size: 80%;
+  margin-bottom: 4px;
+  color: #444;
+}
+
+p {
+  font-size: 80%;
+}
+
+p.small {
+  font-size: 60%;
+  line-height: 80%;
+}
+
+a {
+  color: #363696;
+  text-decoration: none;
+}
+
+ul {
+  list-style-position: inside;
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+li {
+  font-size: 80%;
+  text-indent: -12px;
+}
+
+/*
+  Font definitions
+*/
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../fonts/LibreFranklin-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../fonts/LibreFranklin-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../fonts/LibreFranklin-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../fonts/LibreFranklin-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+}
+/*
+  FontAwesome Icons
+*/
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-times:before {
+  content: "\f00d";
+}
+
+.fa-exchange:before {
+  content: "\f0ec";
+}
+
+.fa-trash:before {
+  content: "\f1f8";
+}
+
+.fa-caret-square-o-down:before {
+  content: "\f150";
+}
+
+.fa-caret-square-o-up:before {
+  content: "\f151";
+}
+
+.fa-code:before {
+  content: "\f121";
+}
+
+.fa-heart:before {
+  content: "\f004";
+}
+
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+.fa-link:before {
+  content: "\f0c1";
+}
+
+.fa-share:before {
+  content: "\f064";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-whatsapp-square:before {
+  content: "\f232";
+}
+
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+
+.fa-xing-square:before {
+  content: "\f169";
+}
+
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+
+.fa-reddit-square:before {
+  content: "\f1a2";
+}
+
+/*
+  Settings view styles
+*/
+#uiContainer {
+  background-color: #eeeeee;
+  padding-top: constant(safe-area-inset-top); /* iOS 11.0 */
+  padding-top: env(safe-area-inset-top); /* iOS 11.2 */
+}
+
+#uiSettingsClose {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  padding: 16px;
+  margin-top: -16px;
+  margin-right: -16px;
+}
+
+#uiInnerContainer {
+  margin: 24px;
+}
+
+#uiContainer h1 {
+  margin-bottom: 1em;
+}
+#uiContainer h2 {
+  margin-bottom: 0.5em;
+}
+
+.buttonContainer {
+  white-space: nowrap;
+}
+
+.btn {
+  border: solid 0 transparent;
+  padding: 7px 0 7px 0;
+  margin: 0;
+  text-decoration: none;
+  width: 50%;
+  font-weight: bold;
+  background-color: #99caf2;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn-active {
+  background-color: #3498db;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px #27496d, inset 0 5px 30px #193047;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn-left {
+  border-radius: 5px 0 0 5px;
+  margin-right: -2px;
+}
+
+.btn-right {
+  border-radius: 0 5px 5px 0;
+  margin-left: -2px;
+}
+
+.btn-full {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: -2px;
+  margin-right: -2px;
+  width: 100%;
+}
+
+.btn-recommend {
+  display: block;
+  margin: 6px 0 12px 0;
+  border: solid 0 transparent;
+  padding: 5px 0 5px 8px;
+  background-color: #99caf2;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-recommend:active {
+  outline: 0;
+  background-color: #3498db;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px #27496d, inset 0 5px 30px #193047;
+}
+
+.btn-recommend-smaller-font {
+  font-family: "Libre Franklin";
+  font-size: 86%;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-recommend:active .btn-recommend-smaller-font {
+  color: #ffffff;
+}
+
+#selectClockLanguage,
+#selectClockFilter {
+  -webkit-appearance: none;
+  width: 100%;
+  margin-bottom: 1.7em;
+  background-color: #99caf2;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 2.7em;
+  background-position: center right;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-weight: bold;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#selectClockLanguage:focus,
+#selectClockFilter:focus {
+  outline: 0;
+}
+
+#clockFilterNotice {
+  margin-top: -1em;
+  margin-bottom: 1.5em;
+  display: none;
+}
+
+#settingsAutolock {
+  margin-bottom: 1.3em;
+}
+#settingsAutolock p {
+  margin-bottom: 0.7em;
+}
+
+.cp-color-picker {
+  z-index: 2;
+}
+
+#settingsClockColors {
+  position: relative;
+}
+#settingsClockColors .btn-45 {
+  width: 45%;
+}
+#settingsClockColors .btn-exchange {
+  background-color: #3498db;
+  color: #eeeeee;
+  width: 10%;
+  margin: 0 -2px 0 -2px;
+  padding: 8px 4px 7px 4px;
+  font-size: 80%;
+}
+#settingsClockColors p#opacity {
+  margin-top: 0.7em;
+  margin-bottom: 0.2em;
+}
+#settingsClockColors input[type=range] {
+  width: 98%;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: none;
+}
+#settingsClockColors input[type=range]::-webkit-slider-runnable-track {
+  height: 5px;
+  background: #99caf2;
+  border: none;
+  border-radius: 3px;
+}
+#settingsClockColors input[type=range]::-ms-track {
+  height: 5px;
+  background: #99caf2;
+  border: none;
+  border-radius: 3px;
+}
+#settingsClockColors input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #3498db;
+  background-size: 31px 31px;
+  margin-top: -10px;
+}
+#settingsClockColors input[type=range]::-ms-thumb {
+  border: none;
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  background: #3498db;
+  margin-top: -8px;
+}
+#settingsClockColors input[type=range]:focus {
+  outline: none;
+}
+#settingsClockColors p#presets {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+}
+#settingsClockColors #savePresets {
+  border-left: solid 1px #3498db;
+}
+#settingsClockColors #presetsContainer {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 10.5em;
+  width: 184px;
+  padding: 0 6px 6px 6px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  border: solid 6px #444;
+  margin-bottom: 20px;
+}
+#settingsClockColors #presetsContainer span:nth-child(1) {
+  display: inline-block;
+  width: 2.7em;
+  height: 1.5em;
+}
+#settingsClockColors #presetsContainer span:nth-child(2) {
+  display: inline-block;
+  width: 2.7em;
+  height: 1.5em;
+}
+#settingsClockColors #presetsContainer p {
+  margin-top: 0.7em;
+}
+#settingsClockColors #presetsContainer p nobr {
+  display: inline-block;
+}
+#settingsClockColors #presetsContainer p i.fa-trash {
+  position: absolute;
+  right: 0;
+  margin-top: -4px;
+  padding: 6px;
+}
+#settingsClockColors #presetsClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 6px 8px 8px;
+  z-index: 10;
+  background-color: #eeeeee;
+}
+#settingsClockColors #savePresets:active {
+  background-color: #3498db;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px #27496d, inset 0 5px 30px #193047;
+}
+
+/* Platform adjustments */
+.ios #settingsClockColors .btn-exchange {
+  padding: 7px 4px 8px 4px;
+}
+
+.android #settingsClockColors .btn-exchange {
+  padding: 7px 4px 9px 4px;
+}
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+#clockContainer {
+  box-shadow: 3px 0px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*
+  Settings for content areas in side menu
+*/
+#menuContent {
+  margin-top: 24px;
+}
+#menuContent div.item {
+  margin-top: 16px;
+}
+#menuContent div.headline i.fa {
+  float: left;
+  margin-right: 5px;
+  margin-top: 2px;
+  font-size: 80%;
+}
+#menuContent div.content {
+  display: none;
+  margin-bottom: 22px;
+}
+#menuContent div.content h3:first-child {
+  margin-top: 0;
+}
+#menuContent div.content h3 {
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+#menuContent div.content p {
+  line-height: 140%;
+  margin-bottom: 12px;
+}
+
+#menuContent.fullVersionNotice {
+  margin-bottom: 20px;
+}
+
+#goFullScreenHeadline {
+  margin-top: 22px;
+}
+
+/*
+  Clock view styles
+*/
+/*
+#clockContainer {
+  // This is supposed to boost performance. See: https://quickleft.com/blog/4-steps-to-minimizing-rendering-issues-in-cordova-applications/
+  // BUT when used like this Chrome and Safari render the clockContainer with height 0... ! If really needed further investigate!
+  //-webkit-transform: translateZ(0);
+  //-webkit-backface-visibility: hidden;
+}
+*/
+svg#filter_definitions {
+  z-index: 0;
+}
+
+#clockContainer {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+#clockContainer svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#clockContainer svg g path {
+  opacity: 0;
+}
+
+svg#svg-clock-tablet-landscape,
+svg#svg-clock-tablet-portrait,
+svg#svg-clock-three-inch-landscape,
+svg#svg-clock-three-inch-portrait,
+svg#svg-clock-four-inch-landscape,
+svg#svg-clock-four-inch-portrait {
+  display: none;
+}
+
+body.landscape svg#svg-clock-tablet-landscape,
+body.landscape svg#svg-clock-three-inch-landscape,
+body.landscape svg#svg-clock-four-inch-landscape {
+  display: block;
+}
+
+body.portrait svg#svg-clock-tablet-portrait,
+body.portrait svg#svg-clock-three-inch-portrait,
+body.portrait svg#svg-clock-four-inch-portrait {
+  display: block;
+}
